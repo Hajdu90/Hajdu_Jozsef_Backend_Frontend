@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.6;
+}
+
+#app{
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.filtered-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.filtered-container select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    font-size: 1rem;
+}
+
+.table-responsive{
+    overflow-x: auto;
+}
+.esemeny-tablazat{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.esemeny-tablazat th, .esemeny-tablazat td {
+    padding: 15px;
+    border-bottom: 1px solid #dee2ea;
+}
+
+.esemeny-tablazat th {
+    background-color: #007Bff;
+    color: white;
+    font-weight: 600;
+}
+
+.esemeny-tablazat tbody tr {
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.esemeny-tablazat tbody tr:hover {
+    background-color: #f1f3f5;
+}
+
+.esemeny-tablazat tbody tr.kivalasztott {
+    background-color: #cce5ff;
+    border-left: 4px solid #0056b3;
+}
+
+@media (max-width:768px){
+    #app {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+
+    }
+
+    .filtered-container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .esemeny-tablazat th, .esemeny-tablazat td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .esemeny-reszletek-container{
+        padding: 15px;
+    }
+}

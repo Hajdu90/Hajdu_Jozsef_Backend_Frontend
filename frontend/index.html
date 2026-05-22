@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div class="filter-container">
+            <label for="kategoria-select">Kategória:</label>
+            <select id="kategoria-select">
+                <option value="">Összes listázása</option>
+            </select>
+        </div>
+        <div class="table-responsive">
+            <table class="esemeny-tablazat">
+                <thead>
+                    <tr>
+                        <th>Esemeny neve</th>
+                        <th>Leiras</th>
+                        <th>Dátum</th>
+                        <th>Ár</th>
+                        <th>Résztvevők</th>
+                        <th>Kép</th>
+                    </tr>
+                </thead>
+                <tbody id="esemeny-tbody">
+                
+                </tbody>
+            </table>
+        </div>
+        <div id="esemeny-reszletek" class="esemeny-reszletek-container">
+            
+        </div>
+        <script type="module" src="index.js"></script>
+    </div>
+    
+</body>
+</html>
